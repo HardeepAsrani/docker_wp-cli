@@ -24,7 +24,4 @@ RUN curl -o /wp-completion.bash https://raw.githubusercontent.com/wp-cli/wp-cli/
 
 RUN echo 'date.timezone=utc' > /usr/local/etc/php/php.ini
 
-# Switch user to www-data (wp-cli doesn't allow being executed as root)
-USER www-data
-
 WORKDIR /var/www/html
